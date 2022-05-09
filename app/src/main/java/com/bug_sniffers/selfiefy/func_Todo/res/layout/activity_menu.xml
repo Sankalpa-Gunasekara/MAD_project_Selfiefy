@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/header"
+        android:contentDescription="TODO" />
+
+    <RelativeLayout
+        android:id="@+id/middle_layout"
+        android:layout_below="@+id/header_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/todo_navigate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/slightDark_blue"
+            android:layout_marginVertical="20dp"
+            android:text="ToDo" />
+
+        <Button
+            android:id="@+id/diary_navigate"
+            android:layout_below="@+id/todo_navigate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/slightDark_blue"
+            android:layout_marginVertical="20dp"
+            android:text="Diary" />
+
+        <Button
+            android:id="@+id/timeTable_navigate"
+            android:layout_below="@+id/diary_navigate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/slightDark_blue"
+            android:layout_marginVertical="20dp"
+            android:text="TimeTables" />
+
+        <Button
+            android:id="@+id/Reminders_navigate"
+            android:layout_below="@+id/timeTable_navigate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/slightDark_blue"
+            android:layout_marginVertical="20dp"
+            android:text="Reminders" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/middle_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="-73dp"
+        android:src="@drawable/circle_half_right" />
+
+</RelativeLayout>
